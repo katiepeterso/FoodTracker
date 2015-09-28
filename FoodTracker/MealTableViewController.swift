@@ -7,8 +7,10 @@
 //
 
 import UIKit
+import Parse
+import ParseUI
 
-class MealTableViewController: UITableViewController {
+class MealTableViewController: UITableViewController, PFLogInViewControllerDelegate, PFSignUpViewControllerDelegate {
     
     // MARK: Properties
     var meals = [Meal]()
@@ -28,6 +30,27 @@ class MealTableViewController: UITableViewController {
             loadSampleMeals()
         }
     }
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        if PFUser.currentUser() == nil {
+            // Create the log in view controller
+            let logInViewController:PFLogInViewController = PFLogInViewController()
+            logInViewController.delegate = self
+            
+            // Create the sign up view controller
+            let signUpViewController: PFSignUpViewController = PFSignUpViewController()
+            signUpViewController.delegate = self
+            
+            // Assign our sign up controller to be displayed from the login controller
+            logInViewController.signUpController = signUpViewController
+            
+            // Present the log in view controller
+            self.presentViewController(logInViewController, animated: true, completion: nil)
+        }
+    }
+    
     
     func loadSampleMeals() {
         let photo1 = UIImage(named: "meal1")!
@@ -89,6 +112,62 @@ class MealTableViewController: UITableViewController {
     override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
         // Return false if you do not want the specified item to be editable.
         return true
+    }
+    
+    // MARK: - Parse sign up and log in delegate
+    func logInViewController(logInController: PFLogInViewController, shouldBeginLogInWithUsername username: String, password: String) -> Bool {
+        if username.characters.count != 0 && password.characters.count != 0 {
+            return true // Begin login process
+        }
+        else {
+            _ = UIAlertController(title: "Missing Information", message: "Make sure you fill out all of the information!", preferredStyle: .Alert)
+            return false // Interrupt login process
+        }
+    }
+    
+    func logInViewController(logInController: PFLogInViewController, didLogInUser user: PFUser) {
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    func logInViewController(logInController: PFLogInViewController, didFailToLogInWithError error: NSError?) {
+        print("Failed to log in...")
+    }
+    
+    func logInViewControllerDidCancelLogIn(logInController: PFLogInViewController) {
+        self.navigationController!.popViewControllerAnimated(true)
+    }
+    
+    func signUpViewController(signUpController: PFSignUpViewController, shouldBeginSignUp info: [NSObject : AnyObject]) -> Bool {
+        var informationComplete = true;
+        
+        // loop through all of the submitted data
+        for (_, field) in info {
+            let fieldString = field as? NSString
+            if (fieldString == nil || fieldString?.length == 0) {
+                informationComplete = false
+                break
+            }
+        }
+        
+        // Display an alert if a field wasn't completed
+        if (!informationComplete) {
+            _ = UIAlertController(title: "Missing Information", message: "Make sure you fill out all of the information!", preferredStyle: .Alert)
+        }
+        return informationComplete;
+    }
+    
+    func signUpViewController(signUpController: PFSignUpViewController, didSignUpUser user: PFUser) {
+        self.dismissViewControllerAnimated(true, completion: nil)
+
+    }
+    
+    func signUpViewController(signUpController: PFSignUpViewController, didFailToSignUpWithError error: NSError?) {
+        print("Failed to sign up...")
+    }
+    
+    func signUpViewControllerDidCancelSignUp(signUpController: PFSignUpViewController) {
+        self.navigationController!.popViewControllerAnimated(true)
+
     }
     
     // MARK: - Navigation
