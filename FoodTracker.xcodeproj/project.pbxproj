@@ -20,6 +20,17 @@
 		AAFA67CF1BB8BAB5009BD1BD /* MealTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFA67CD1BB8BAB5009BD1BD /* MealTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
 		AAFA67D11BB8BEF4009BD1BD /* MealTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFA67D01BB8BEF4009BD1BD /* MealTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		AAFA67D21BB8BEF4009BD1BD /* MealTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFA67D01BB8BEF4009BD1BD /* MealTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		AAFA67D51BB9CFE0009BD1BD /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAFA67D31BB9CFE0009BD1BD /* Bolts.framework */; settings = {ASSET_TAGS = (); }; };
+		AAFA67D61BB9CFE0009BD1BD /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAFA67D41BB9CFE0009BD1BD /* Parse.framework */; settings = {ASSET_TAGS = (); }; };
+		AAFA67DF1BB9D07D009BD1BD /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAFA67D71BB9D07D009BD1BD /* AudioToolbox.framework */; };
+		AAFA67E01BB9D07D009BD1BD /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAFA67D81BB9D07D009BD1BD /* CFNetwork.framework */; };
+		AAFA67E11BB9D07D009BD1BD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAFA67D91BB9D07D009BD1BD /* CoreGraphics.framework */; };
+		AAFA67E21BB9D07D009BD1BD /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAFA67DA1BB9D07D009BD1BD /* CoreLocation.framework */; };
+		AAFA67E31BB9D07D009BD1BD /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAFA67DB1BB9D07D009BD1BD /* QuartzCore.framework */; };
+		AAFA67E41BB9D07D009BD1BD /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAFA67DC1BB9D07D009BD1BD /* Security.framework */; };
+		AAFA67E51BB9D07D009BD1BD /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAFA67DD1BB9D07D009BD1BD /* StoreKit.framework */; };
+		AAFA67E61BB9D07D009BD1BD /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAFA67DE1BB9D07D009BD1BD /* SystemConfiguration.framework */; };
+		AAFA67E81BB9D57D009BD1BD /* APIKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFA67E71BB9D57D009BD1BD /* APIKeys.swift */; settings = {ASSET_TAGS = (); }; };
 		E62D4CB68242D37128E7FB3D /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47F0D1BBD47722F005BEB405 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
@@ -50,6 +61,17 @@
 		AAFA67CA1BB8B459009BD1BD /* Meal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
 		AAFA67CD1BB8BAB5009BD1BD /* MealTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MealTableViewCell.swift; sourceTree = "<group>"; };
 		AAFA67D01BB8BEF4009BD1BD /* MealTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MealTableViewController.swift; sourceTree = "<group>"; };
+		AAFA67D31BB9CFE0009BD1BD /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		AAFA67D41BB9CFE0009BD1BD /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		AAFA67D71BB9D07D009BD1BD /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		AAFA67D81BB9D07D009BD1BD /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		AAFA67D91BB9D07D009BD1BD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		AAFA67DA1BB9D07D009BD1BD /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		AAFA67DB1BB9D07D009BD1BD /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		AAFA67DC1BB9D07D009BD1BD /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		AAFA67DD1BB9D07D009BD1BD /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		AAFA67DE1BB9D07D009BD1BD /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		AAFA67E71BB9D57D009BD1BD /* APIKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = APIKeys.swift; path = ../APIKeys.swift; sourceTree = "<group>"; };
 		E7EFBCA2DB8EABDB2C54F99D /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -58,7 +80,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAFA67DF1BB9D07D009BD1BD /* AudioToolbox.framework in Frameworks */,
+				AAFA67E01BB9D07D009BD1BD /* CFNetwork.framework in Frameworks */,
+				AAFA67E11BB9D07D009BD1BD /* CoreGraphics.framework in Frameworks */,
+				AAFA67E21BB9D07D009BD1BD /* CoreLocation.framework in Frameworks */,
+				AAFA67E31BB9D07D009BD1BD /* QuartzCore.framework in Frameworks */,
+				AAFA67E41BB9D07D009BD1BD /* Security.framework in Frameworks */,
+				AAFA67E51BB9D07D009BD1BD /* StoreKit.framework in Frameworks */,
+				AAFA67E61BB9D07D009BD1BD /* SystemConfiguration.framework in Frameworks */,
 				E62D4CB68242D37128E7FB3D /* Pods.framework in Frameworks */,
+				AAFA67D61BB9CFE0009BD1BD /* Parse.framework in Frameworks */,
+				AAFA67D51BB9CFE0009BD1BD /* Bolts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +107,8 @@
 		AAFA679C1BB86405009BD1BD = {
 			isa = PBXGroup;
 			children = (
+				AAFA67D31BB9CFE0009BD1BD /* Bolts.framework */,
+				AAFA67D41BB9CFE0009BD1BD /* Parse.framework */,
 				AAFA67A71BB86405009BD1BD /* FoodTracker */,
 				AAFA67BC1BB86405009BD1BD /* FoodTrackerTests */,
 				AAFA67A61BB86405009BD1BD /* Products */,
@@ -105,6 +139,7 @@
 				AAFA67AF1BB86405009BD1BD /* Assets.xcassets */,
 				AAFA67B11BB86405009BD1BD /* LaunchScreen.storyboard */,
 				AAFA67B41BB86405009BD1BD /* Info.plist */,
+				AAFA67E71BB9D57D009BD1BD /* APIKeys.swift */,
 			);
 			path = FoodTracker;
 			sourceTree = "<group>";
@@ -130,6 +165,14 @@
 		C649F54FA5578B06B64CB748 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AAFA67D71BB9D07D009BD1BD /* AudioToolbox.framework */,
+				AAFA67D81BB9D07D009BD1BD /* CFNetwork.framework */,
+				AAFA67D91BB9D07D009BD1BD /* CoreGraphics.framework */,
+				AAFA67DA1BB9D07D009BD1BD /* CoreLocation.framework */,
+				AAFA67DB1BB9D07D009BD1BD /* QuartzCore.framework */,
+				AAFA67DC1BB9D07D009BD1BD /* Security.framework */,
+				AAFA67DD1BB9D07D009BD1BD /* StoreKit.framework */,
+				AAFA67DE1BB9D07D009BD1BD /* SystemConfiguration.framework */,
 				47F0D1BBD47722F005BEB405 /* Pods.framework */,
 			);
 			name = Frameworks;
@@ -288,6 +331,7 @@
 			files = (
 				AAFA67CB1BB8B459009BD1BD /* Meal.swift in Sources */,
 				AAFA67AB1BB86405009BD1BD /* MealViewController.swift in Sources */,
+				AAFA67E81BB9D57D009BD1BD /* APIKeys.swift in Sources */,
 				AAFA67C91BB89FBF009BD1BD /* RatingControl.swift in Sources */,
 				AAFA67A91BB86405009BD1BD /* AppDelegate.swift in Sources */,
 				AAFA67D11BB8BEF4009BD1BD /* MealTableViewController.swift in Sources */,
@@ -424,6 +468,10 @@
 			baseConfigurationReference = E7EFBCA2DB8EABDB2C54F99D /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = FoodTracker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wordpress.katieexpatriated.FoodTracker;
@@ -436,6 +484,10 @@
 			baseConfigurationReference = 5536AA486156A7325F231D43 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = FoodTracker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wordpress.katieexpatriated.FoodTracker;
