@@ -31,6 +31,8 @@
 		AAFA67E51BB9D07D009BD1BD /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAFA67DD1BB9D07D009BD1BD /* StoreKit.framework */; };
 		AAFA67E61BB9D07D009BD1BD /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAFA67DE1BB9D07D009BD1BD /* SystemConfiguration.framework */; };
 		AAFA67E81BB9D57D009BD1BD /* APIKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFA67E71BB9D57D009BD1BD /* APIKeys.swift */; settings = {ASSET_TAGS = (); }; };
+		AAFA67EC1BBA1DFC009BD1BD /* ProfileSetup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAFA67EB1BBA1DFC009BD1BD /* ProfileSetup.storyboard */; settings = {ASSET_TAGS = (); }; };
+		AAFA67EE1BBA230C009BD1BD /* ProfileSetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFA67ED1BBA230C009BD1BD /* ProfileSetupViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		E62D4CB68242D37128E7FB3D /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47F0D1BBD47722F005BEB405 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
@@ -72,6 +74,8 @@
 		AAFA67DD1BB9D07D009BD1BD /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		AAFA67DE1BB9D07D009BD1BD /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		AAFA67E71BB9D57D009BD1BD /* APIKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = APIKeys.swift; path = ../APIKeys.swift; sourceTree = "<group>"; };
+		AAFA67EB1BBA1DFC009BD1BD /* ProfileSetup.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ProfileSetup.storyboard; sourceTree = "<group>"; };
+		AAFA67ED1BBA230C009BD1BD /* ProfileSetupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileSetupViewController.swift; sourceTree = "<group>"; };
 		E7EFBCA2DB8EABDB2C54F99D /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -132,10 +136,12 @@
 				AAFA67A81BB86405009BD1BD /* AppDelegate.swift */,
 				AAFA67AA1BB86405009BD1BD /* MealViewController.swift */,
 				AAFA67D01BB8BEF4009BD1BD /* MealTableViewController.swift */,
+				AAFA67ED1BBA230C009BD1BD /* ProfileSetupViewController.swift */,
 				AAFA67C81BB89FBF009BD1BD /* RatingControl.swift */,
 				AAFA67CA1BB8B459009BD1BD /* Meal.swift */,
 				AAFA67CD1BB8BAB5009BD1BD /* MealTableViewCell.swift */,
 				AAFA67AC1BB86405009BD1BD /* Main.storyboard */,
+				AAFA67EB1BBA1DFC009BD1BD /* ProfileSetup.storyboard */,
 				AAFA67AF1BB86405009BD1BD /* Assets.xcassets */,
 				AAFA67B11BB86405009BD1BD /* LaunchScreen.storyboard */,
 				AAFA67B41BB86405009BD1BD /* Info.plist */,
@@ -261,6 +267,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAFA67EC1BBA1DFC009BD1BD /* ProfileSetup.storyboard in Resources */,
 				AAFA67B31BB86405009BD1BD /* LaunchScreen.storyboard in Resources */,
 				AAFA67B01BB86405009BD1BD /* Assets.xcassets in Resources */,
 				AAFA67AE1BB86405009BD1BD /* Main.storyboard in Resources */,
@@ -329,6 +336,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAFA67EE1BBA230C009BD1BD /* ProfileSetupViewController.swift in Sources */,
 				AAFA67CB1BB8B459009BD1BD /* Meal.swift in Sources */,
 				AAFA67AB1BB86405009BD1BD /* MealViewController.swift in Sources */,
 				AAFA67E81BB9D57D009BD1BD /* APIKeys.swift in Sources */,

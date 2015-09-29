@@ -157,8 +157,12 @@ class MealTableViewController: UITableViewController, PFLogInViewControllerDeleg
     }
     
     func signUpViewController(signUpController: PFSignUpViewController, didSignUpUser user: PFUser) {
-        self.dismissViewControllerAnimated(true, completion: nil)
+        self.dismissViewControllerAnimated(true, completion: {
+            let storyboard : UIStoryboard = UIStoryboard(name: "ProfileSetup", bundle: NSBundle.mainBundle())
+            let viewController : ProfileSetupViewController = storyboard.instantiateViewControllerWithIdentifier("profileSetup") as! ProfileSetupViewController
+            self.presentViewController(viewController, animated: true, completion: nil)
 
+        })
     }
     
     func signUpViewController(signUpController: PFSignUpViewController, didFailToSignUpWithError error: NSError?) {

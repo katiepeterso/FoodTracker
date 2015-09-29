@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Yle-Wz-hJI">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Profile Setup View Controller-->
+        <scene sceneID="qZo-Nk-HOn">
+            <objects>
+                <viewController storyboardIdentifier="profileSetup" id="Yle-Wz-hJI" customClass="ProfileSetupViewController" customModule="FoodTracker" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Wha-cz-rSq"/>
+                        <viewControllerLayoutGuide type="bottom" id="dPk-Y8-jyP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6Ga-fv-JA3">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="d5c-hv-NUO">
+                                <rect key="frame" x="20" y="20" width="560" height="323"/>
+                            </imageView>
+                            <pickerView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EqV-RL-Fgb">
+                                <rect key="frame" x="20" y="380" width="560" height="162"/>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XLw-Iv-xW0">
+                                <rect key="frame" x="283" y="550" width="34" height="30"/>
+                                <state key="normal" title="Save"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Credentials" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VHx-Tg-bSF">
+                                <rect key="frame" x="257" y="351" width="87" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TvU-UU-790">
+                                <rect key="frame" x="20" y="299" width="560" height="44"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="29P-Yv-XLh">
+                                    <rect key="frame" x="0.0" y="0.0" width="560" height="44"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select profile photo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Juz-yV-23a">
+                                            <rect key="frame" x="0.0" y="11" width="560" height="20.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="Juz-yV-23a" firstAttribute="width" secondItem="29P-Yv-XLh" secondAttribute="width" id="8rO-aK-Jx5"/>
+                                        <constraint firstAttribute="bottom" secondItem="Juz-yV-23a" secondAttribute="bottom" constant="12.5" id="SB8-pW-yPZ"/>
+                                        <constraint firstItem="Juz-yV-23a" firstAttribute="leading" secondItem="29P-Yv-XLh" secondAttribute="leading" id="YwD-Q7-vbh"/>
+                                        <constraint firstItem="Juz-yV-23a" firstAttribute="top" secondItem="29P-Yv-XLh" secondAttribute="top" constant="11" id="f29-7m-sUm"/>
+                                    </constraints>
+                                </view>
+                                <blurEffect style="dark"/>
+                            </visualEffectView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="EqV-RL-Fgb" firstAttribute="centerX" secondItem="6Ga-fv-JA3" secondAttribute="centerX" id="2Eg-Qw-D6d"/>
+                            <constraint firstItem="EqV-RL-Fgb" firstAttribute="top" secondItem="VHx-Tg-bSF" secondAttribute="bottom" constant="8" id="BdX-Qr-jR2"/>
+                            <constraint firstItem="VHx-Tg-bSF" firstAttribute="centerX" secondItem="6Ga-fv-JA3" secondAttribute="centerX" id="DnX-tF-apa"/>
+                            <constraint firstItem="TvU-UU-790" firstAttribute="leading" secondItem="d5c-hv-NUO" secondAttribute="leading" id="F5D-mj-O6N"/>
+                            <constraint firstItem="EqV-RL-Fgb" firstAttribute="leading" secondItem="6Ga-fv-JA3" secondAttribute="leadingMargin" id="IdV-pB-dbf"/>
+                            <constraint firstItem="d5c-hv-NUO" firstAttribute="top" secondItem="Wha-cz-rSq" secondAttribute="bottom" id="JJd-ZD-2NK"/>
+                            <constraint firstItem="TvU-UU-790" firstAttribute="width" secondItem="d5c-hv-NUO" secondAttribute="width" id="Lsi-ux-PAP"/>
+                            <constraint firstItem="d5c-hv-NUO" firstAttribute="leading" secondItem="6Ga-fv-JA3" secondAttribute="leadingMargin" id="NZZ-DZ-Q1U"/>
+                            <constraint firstItem="EqV-RL-Fgb" firstAttribute="trailing" secondItem="6Ga-fv-JA3" secondAttribute="trailingMargin" id="STA-J3-Jr1"/>
+                            <constraint firstItem="XLw-Iv-xW0" firstAttribute="top" secondItem="EqV-RL-Fgb" secondAttribute="bottom" constant="8" id="SVN-a1-yh8"/>
+                            <constraint firstItem="XLw-Iv-xW0" firstAttribute="centerX" secondItem="6Ga-fv-JA3" secondAttribute="centerX" id="XsK-35-wcV"/>
+                            <constraint firstItem="VHx-Tg-bSF" firstAttribute="top" secondItem="d5c-hv-NUO" secondAttribute="bottom" constant="8" id="f71-sl-mEa"/>
+                            <constraint firstItem="d5c-hv-NUO" firstAttribute="trailing" secondItem="6Ga-fv-JA3" secondAttribute="trailingMargin" id="p7v-xD-yMS"/>
+                            <constraint firstItem="TvU-UU-790" firstAttribute="bottom" secondItem="d5c-hv-NUO" secondAttribute="bottom" id="pts-PO-ILJ"/>
+                            <constraint firstItem="dPk-Y8-jyP" firstAttribute="top" secondItem="XLw-Iv-xW0" secondAttribute="bottom" constant="20" id="wfY-wW-GWH"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="credentialPickerView" destination="EqV-RL-Fgb" id="3ct-lh-j0H"/>
+                        <outlet property="profileImageView" destination="d5c-hv-NUO" id="TOD-gW-jHd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9sJ-Yh-rJU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="743" y="345"/>
+        </scene>
+    </scenes>
+</document>
