@@ -14,5 +14,21 @@ class MealTableViewCell: UITableViewCell {
     @IBOutlet weak var photoImageView: UIImageView!
     @IBOutlet weak var ratingControl: RatingControl!
     
-
+    var meal: Meal? {
+        didSet{
+            if let meal = meal{
+                nameLabel.text = meal.name
+                ratingControl.rating = meal.rating
+                
+                if let mealPhoto = meal.photo {
+                    mealPhoto.getDataInBackgroundWithBlock { data, error in
+                        if let newData = data {
+                            let newImage = UIImage(data: newData)
+                            self.photoImageView.image = newImage
+                        }
+                }
+                }
+            }
+        }
+    }
 }
